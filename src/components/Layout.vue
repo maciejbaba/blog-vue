@@ -1,8 +1,14 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>Hii</h1>
+  <Header />
+  <Main />
+  <Footer />
 </template>
+
+<script setup lang="ts">
+import Footer from "./Footer.vue";
+import Header from "./Header.vue";
+import Main from "./Main.vue";
+</script>
 
 <style scoped>
 h1 {

@@ -1,1 +1,1 @@
-# this blog app will be built with vue and ts
+# this blog app will be built with vue, ts and sass
