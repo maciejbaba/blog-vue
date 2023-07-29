@@ -1,10 +1,10 @@
 <template lang="">
-  <div class="nav">
+  <nav class="nav">
     <a href="/">home</a>
     <a href="/posts">posts</a>
     <a href="/about">about</a>
     <a href="/contact">contact</a>
-  </div>
+  </nav>
 </template>
 <script lang="ts">
 export default {};
@@ -18,5 +18,9 @@ export default {};
   text-transform: uppercase;
   font-weight: bold;
   background-color: #ccc;
+}
+
+.nav a {
+  padding: 1rem;
 }
 </style>

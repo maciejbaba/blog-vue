@@ -1,9 +1,14 @@
-<script setup lang="ts">
-import Layout from "./components/Layout.vue";
-</script>
-
-<template>
-  <Layout />
+<template lang="">
+  <div>
+    <Layout />
+  </div>
 </template>
-
-<style scoped></style>
+<script lang="ts">
+import Layout from "./layouts/Layout.vue";
+export default {
+  components: {
+    Layout,
+  },
+};
+</script>
+<style lang=""></style>

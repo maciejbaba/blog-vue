@@ -1,16 +1,23 @@
 <template>
-  <div class="header">
-    <h1>My Blog</h1>
+  <header class="header">
+    <div>
+      <h1>My Blog</h1>
+    </div>
     <Nav />
-  </div>
+  </header>
 </template>
-<script setup lang="ts">
+<script lang="ts">
 import Nav from "./Nav.vue";
+export default {
+  components: {
+    Nav,
+  },
+};
 </script>
 <style scoped>
 .header {
   display: flex;
-  width: 100%;
+  padding: 1rem;
   justify-content: space-between;
   align-items: center;
   background-color: #ccc;
