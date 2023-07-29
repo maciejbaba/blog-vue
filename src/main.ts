@@ -30,7 +30,7 @@ const router = createRouter({
 
 const app = createApp(App);
 
-app.component("Header", Header);
+app.component("Header", Header); // Global component, used in all pages
 
 app.use(router);
 

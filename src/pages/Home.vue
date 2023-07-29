@@ -1,7 +1,7 @@
 <template lang="">
-  <div>
+  <main>
     something
-  </div>
+  </main>
 </template>
 <script lang="ts">
 export default {

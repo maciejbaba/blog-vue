@@ -1,10 +1,8 @@
 <template lang="">
-  <main>
-    <Header />
-    <component :is="$route.meta.layout || 'div'">
-      <router-view />
-    </component>
-  </main>
+  <Header />
+  <component :is="$route.meta.layout || 'div'">
+    <router-view />
+  </component>
 </template>
 <script lang="ts">
 import Header from "../components/Header.vue";

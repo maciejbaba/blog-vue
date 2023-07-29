@@ -1,7 +1,5 @@
 <template lang="">
-  <div>
-    <Layout />
-  </div>
+  <Layout />
 </template>
 <script lang="ts">
 import Layout from "./layouts/Layout.vue";
