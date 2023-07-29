@@ -1,17 +1,19 @@
 <template>
-  <Header />
-  <Main />
-  <Footer />
+  <Header class="header"/>
+  <Main class="main"/>
 </template>
 
 <script setup lang="ts">
-import Footer from "./Footer.vue";
 import Header from "./Header.vue";
 import Main from "./Main.vue";
 </script>
 
 <style scoped>
-h1 {
-  color: red;
+.header {
+  height: 10vh;
+}
+
+.main {
+  height: 90vh;
 }
 </style>

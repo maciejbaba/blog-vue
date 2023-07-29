@@ -1,6 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <h1>main</h1>
+  </div>
 </template>
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 <style scoped></style>
