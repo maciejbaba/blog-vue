@@ -9,18 +9,3 @@
 <script lang="ts">
 export default {};
 </script>
-<style scoped>
-.nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 50px;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: #ccc;
-}
-
-.nav a {
-  padding: 1rem;
-}
-</style>

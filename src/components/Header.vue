@@ -1,7 +1,7 @@
 <template>
-  <header class="header">
+  <header class="flex flex-row">
     <div>
-      <h1>My Blog</h1>
+      <h1 class="text-2xl font-bold">My Blog</h1>
     </div>
     <Nav />
   </header>
@@ -14,12 +14,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-.header {
-  display: flex;
-  padding: 1rem;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ccc;
-}
-</style>
+<style scoped></style>
