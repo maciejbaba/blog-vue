@@ -1,19 +1,9 @@
-import { createApp } from "vue";
 import "./style.css";
-import { createRouter, createWebHistory } from "vue-router";
+
+import { createApp } from "vue";
 import App from "./App.vue";
-import Header from "./components/Header.vue";
-import { createChakra } from "@chakra-ui/vue-next";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
-import { faUserSecret, faBlog } from "@fortawesome/free-solid-svg-icons";
-
-library.add(faUserSecret, faBlog);
-
-const chakra = createChakra();
+const app = createApp(App);
 
 const routes = [
   {
@@ -34,17 +24,30 @@ const routes = [
   },
 ];
 
+import { createRouter, createWebHistory } from "vue-router";
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
 });
 
-const app = createApp(App);
+app.use(router);
 
-app.component("Header", Header); // Global component, used in all pages
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+import { faUserSecret, faBlog } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faUserSecret, faBlog);
 app.component("font-awesome-icon", FontAwesomeIcon);
 
+import { createChakra } from "@chakra-ui/vue-next";
+
+const chakra = createChakra();
 app.use(chakra);
-app.use(router);
+
+import Header from "./components/Header.vue";
+app.component("Header", Header); // Global component, used in all pages
 
 app.mount("#app");

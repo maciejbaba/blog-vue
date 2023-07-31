@@ -1,19 +1,23 @@
 <template>
-  <header class="flex justify-around">
-    <CHeading>
-      <h1 class="text-3xl font-bold p-2">My Blog</h1>
-      <font-awesome-icon icon="fa-solid fa-blog" />
-    </CHeading>
-    <Nav />
+  <header>
+    <c-box class="flex justify-around items-center p-2 bg-[#bc6c25]">
+      <c-box class="flex gap-3 text-[#fefae0]">
+        <font-awesome-icon class="text-4xl" icon="fa-solid fa-blog" />
+        <c-heading class="font-bold italic">My Blog</c-heading>
+      </c-box>
+      <Nav />
+    </c-box>
+    <c-box class="p-1 bg-[#dda15e]" />
   </header>
-</template>u
+</template>
 <script lang="ts">
 import Nav from "./Nav.vue";
-import { CHeading } from "@chakra-ui/vue-next";
+import { CHeading, CBox } from "@chakra-ui/vue-next";
 export default {
   components: {
     Nav,
     CHeading,
+    CBox,
   },
 };
 </script>
