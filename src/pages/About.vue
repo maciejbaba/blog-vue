@@ -1,7 +1,7 @@
 <template lang="">
   <main class="mx-auto w-1/2 mt-4 flex flex-col gap-4">
     <c-heading>
-      <p>About me</p>
+      <p class="">About me &nbsp;<font-awesome-icon icon="fa-solid fa-eye" /></p>
       <hr />
     </c-heading>
     <p>

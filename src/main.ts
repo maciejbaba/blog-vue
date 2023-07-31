@@ -34,12 +34,10 @@ const router = createRouter({
 app.use(router);
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faUserSecret, faBlog, faEye } from "@fortawesome/free-solid-svg-icons";
 
-import { faUserSecret, faBlog } from "@fortawesome/free-solid-svg-icons";
-
-library.add(faUserSecret, faBlog);
+library.add(faUserSecret, faBlog, faEye);
 app.component("font-awesome-icon", FontAwesomeIcon);
 
 import { createChakra } from "@chakra-ui/vue-next";
