@@ -1,3 +1,5 @@
+// This code initializes the Vue application and sets up the router
+
 import "./style.css";
 
 import { createApp } from "vue";
@@ -5,7 +7,12 @@ import App from "./App.vue";
 
 const app = createApp(App);
 
-const routes = [
+type Route = {
+  path: string;
+  component: any;
+};
+
+const routes: Route[] = [
   {
     path: "/",
     component: () => import("./pages/Home.vue"),
@@ -37,9 +44,11 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faUserSecret, faBlog, faEye } from "@fortawesome/free-solid-svg-icons";
 
+// icons used in the app
 library.add(faUserSecret, faBlog, faEye);
 app.component("font-awesome-icon", FontAwesomeIcon);
 
+// chakra-ui
 import { createChakra } from "@chakra-ui/vue-next";
 
 const chakra = createChakra();

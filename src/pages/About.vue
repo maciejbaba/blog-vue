@@ -1,7 +1,9 @@
 <template lang="">
-  <main class="mx-auto w-1/2 mt-4 flex flex-col gap-4">
+  <c-box class="mx-auto w-1/2 mt-4 flex flex-col gap-4">
     <c-heading>
-      <p class="">About me &nbsp;<font-awesome-icon icon="fa-solid fa-eye" /></p>
+      <p class="">
+        About me &nbsp;<font-awesome-icon icon="fa-solid fa-eye" />
+      </p>
       <hr />
     </c-heading>
     <p>
@@ -22,13 +24,14 @@
       quibusdam, quia, quae voluptatem voluptatum quos exercitationem quod
       voluptate quas doloribus.
     </p>
-  </main>
+  </c-box>
 </template>
 <script lang="ts">
-import { CHeading } from "@chakra-ui/vue-next";
+import { CHeading, CBox } from "@chakra-ui/vue-next";
 export default {
   components: {
     CHeading,
+    CBox,
   },
 };
 </script>
