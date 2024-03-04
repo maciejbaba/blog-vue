@@ -1,13 +1,20 @@
-<template lang="">
-  <main>
-    <div v-for="post in posts" :key="post.id">
-      <h2>{{ post.id }} - {{ post.title }}</h2>
-      <p>{{ post.content }}</p>
-    </div>
+
+<template>
+  <main class="flex flex-col items-center justify-center min-h-screen">
+    <c-box v-for="post in posts" :key="post.id" class="mb-4 p-4 shadow-lg rounded-lg">
+      <h2 class="text-xl font-bold mb-2">{{ post.id }} - {{ post.title }}</h2>
+      <p class="text-gray-700">{{ post.content }}</p>
+    </c-box>
   </main>
 </template>
+
 <script lang="ts">
+import { CBox } from "@chakra-ui/vue-next";
+
 export default {
+  components: {
+    CBox
+  },
   mounted() {
     this.getPosts();
   },
@@ -25,4 +32,8 @@ export default {
   },
 };
 </script>
-<style lang=""></style>
+
+<style scoped>
+/* Additional styles if needed */
+</style>
+
