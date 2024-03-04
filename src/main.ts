@@ -12,7 +12,9 @@ type Route = {
   component: any;
 };
 
-const routes: Route[] = [
+type Routes = Route[];
+
+const routes: Routes = [
   {
     path: "/",
     component: () => import("./pages/Home.vue"),
@@ -20,6 +22,10 @@ const routes: Route[] = [
   {
     path: "/posts",
     component: () => import("./pages/Posts.vue"),
+  },
+  {
+    path: "/posts/:id",
+    component: () => import("./pages/Post.vue"),
   },
   {
     path: "/contact",
