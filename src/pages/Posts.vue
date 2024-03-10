@@ -3,7 +3,7 @@
     <c-box
       v-for="post in posts"
       :key="post.id"
-      class="mb-4 p-4 shadow-lg rounded-lg cursor-pointer"
+      class="mb-4 p-4 w-1/2 shadow-lg rounded-lg cursor-pointer"
       @click="goToPost(post.id)"
     >
       <h2 class="text-xl font-bold mb-2">{{ post.id }} - {{ post.title }}</h2>
